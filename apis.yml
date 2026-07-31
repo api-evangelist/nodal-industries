@@ -1,8 +1,25 @@
 aid: nodal-industries
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/nodal-industries.png
 name: Nodal Industries
-description: Nodal Industries is a company surfaced as a portfolio company of 500-global and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: Nodal Industries, operating as Nodal Security, is a network security company
+  and 500 Global portfolio startup that makes Numa, a plug-and-play network security appliance
+  providing protective oversight of every connected device on a home or small-office network.
+  Rather than per-device antivirus software, Numa works at the network layer, intercepting
+  malicious traffic before it reaches devices using real-time threat intelligence powered by
+  Suricata, with automatic updates and minimal setup. As of this enrichment pass the company
+  publishes a marketing website only and exposes no public API, SDK, developer documentation,
+  or event surface.
 url: https://raw.githubusercontent.com/api-evangelist/nodal-industries/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,9 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Security
+- Network Security
+- Cybersecurity
+- Threat Intelligence
+- Consumer Hardware
+- IoT
+- Appliance
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,3 +48,16 @@ maintainers:
 common:
 - type: Website
   url: https://nodalsecurity.com
+- type: Support
+  url: https://nodalsecurity.com/contact-us/
+- type: TermsOfService
+  url: https://nodalsecurity.com/terms-conditions/
+- type: PrivacyPolicy
+  url: https://nodalsecurity.com/privacy-policy-2/
+- type: DomainSecurity
+  url: security/nodal-industries-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
